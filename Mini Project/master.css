@@ -1,0 +1,211 @@
+
+
+#HeaderText{
+	/*text-shadow: 1px 1px 5px #87CEFF; */
+	text-shadow: 1px 1px 5px #000051;
+	font-size: 45px;
+	color: white;
+	/*opacity: 1;
+	transition: opacity 2s; 
+    -webkit-transition: opacity 1s; 
+    width: 1500px;
+    transition: .5s all; 
+    transition-delay: 1s;*/
+} 
+
+/*#HeaderText:hover #r1:after{
+ 	 
+ 	content:"R";
+ 	opacity:0.2;
+ 	width: 50px;
+ 	background-color: gold;
+}*/
+/*#a1:hover {
+    width: 0px;
+    opacity: 0px;
+}*/
+#HeaderText:hover #r2{
+ 	 
+ 	
+ 	opacity:0;
+ 	width: 0px;
+ 	/*display: none;
+	content:"";*/
+
+}
+
+/*#HeaderText:hover #s1:after{
+ 	 
+ 	content:"S";
+}*/
+
+#HeaderText:hover #s2{
+ 	 
+ 	/*content:"";*/
+ 	opacity:0;
+ 	width: 0px;
+
+}
+
+/*#HeaderText:hover #g1:after{
+ 	 
+ 	content:"G";
+}*/
+
+#HeaderText:hover #g2{
+ 	 
+ 	/*content:"";*/
+ 	opacity:0;
+ 	width: 0px;
+}
+
+/*#HeaderText:hover #m1:after{
+ 	 
+ 	content:"Mgm";
+}*/
+
+#HeaderText:hover #m2{
+ 	 
+ 	/*content:"";*/
+ 	opacity:0;
+ 	width: 0px;
+}
+
+/*#HeaderText:hover #sy1:after{
+ 	 
+ 	content:"S";
+}*/
+
+#HeaderText:hover #sy2{
+ 	 
+ 	/*content:"";*/
+ 	opacity:0;
+ 	width: 0px;
+}
+
+#r1:after{
+	content:"R";
+	color: #0000ff;
+
+	/*color:#236B8E;*/
+
+/*	width: 1100px;
+	transition: .50s all; 
+    transition-delay: 3s;*/
+
+}
+
+#r2:after{
+	content:"oad";
+}
+#r2{
+	display: inline-grid;
+	overflow: hidden;
+	opacity:.8;
+	width: 70px;
+	/*background: gold;*/
+	transition: 1.45s all; 
+	transition-timing-function: ease-in-out;
+   /* transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    transition: width 2s;*/
+}
+
+#s1:after{
+	content:"S";
+	color:#0000ff;
+}
+
+#s2:after{
+	content:"anitation";
+}
+#s2{
+	display: inline-grid;
+	overflow: hidden;
+	opacity:.8;
+	width: 160px;
+	/*background-color: gold;*/
+	transition: 1.45s all; 
+    /*transition-delay: 1s;*/
+    transition-timing-function: ease-in-out;
+}
+
+#g1:after{
+	content:"G";
+	color:#0000ff;
+}
+#g2:after{
+	content:"rievances";
+}
+#g2{
+	display: inline-grid;
+	overflow: hidden;
+	opacity:.8;
+	width: 170px;
+	/*background-color: gold;*/
+	transition: 1.45s all; 
+   /* transition-delay: 1s;*/
+    transition-timing-function: ease-in-out;
+}
+
+#m1:after{
+	content:"M";
+	color:#0000ff;
+}
+#m2:after{
+	content:"anagement";
+}
+#m2{
+	display: inline-grid;
+	overflow: hidden;
+	opacity:.8;
+	width: 197px;
+	/*background-color: gold;*/
+	transition: 1.45s all; 
+   /* transition-delay: 1s;*/
+    transition-timing-function: ease-in-out;
+}
+
+#sy1:after{
+	content:"S";
+	color:#0000ff;
+}
+#sy2:after{
+	content:"ystem";
+}
+#sy2{
+	display: inline-grid;
+	overflow: hidden;
+	opacity:.8;
+	width: 110px;
+	/*background-color: gold;*/
+	transition: 1.45s all; 
+   /* transition-delay: 1s;*/
+    transition-timing-function: ease-in-out;
+}
+
+/*#a1{
+	width: 1000px;
+    height: 1000px;
+    opacity:1;
+    background: red;
+    transition:2.5s all;
+    content:"Note";
+}*/
+
+/*#road:hover:after,#sanitation:hover:after{
+ 	 
+ 	content:"RSGMgmS";
+ 	
+}
+
+#HeaderText:after{
+ 	 
+ 	content:"Road Sanitation Grievances Management System";
+ 	color:#236B8E;
+}*/
+
+body{
+/*background-color: #F0F8FF ;*/
+background-color: #00001E;
+}
