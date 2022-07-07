@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+
+		<title>
+			BMC
+		</title>
+	</head>
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = 0;
+	}
+
+	</script>
+	<style>
+	.openbtn{
+		font-size: 24px;
+		color : blue;
+
+	}
+		.sidenav a{
+				display : block;
+				padding: 8px 8px 8px;
+				font-size : 40px;
+				transition: 0.3s;
+				width : 0;
+
+
+		}
+		.sidenav {
+			width : 0;
+			height : 100%;
+			background-color : #00001E;
+			position : fixed;
+			overflow-x: hidden;
+			top : 0;
+			left : 0;
+			padding-top : 200px;
+			transition : 0.5s;
+		}
+
+		.sidenav .closebtn {
+			top : 0;
+			padding-left : 50px;
+			margin-left : 50px;
+		}
+		.sidenav a:hover{
+			color: orange;
+			font-style: italic;
+			transition: 0.2s;
+		}
+	</style>
+	<body>
+		<span  class = "openbtn" onclick="openNav()">&Xi; 	</span>
+				<div id = "mySidenav" class = "sidenav">
+					<!-- 	javascript:void(0) will call JS within the link -->
+
+					<a href = "javascript:void(0);" class = "closebtn" onclick = "closeNav()">x</a>
+					<a href = "index.html">Home</a>
+					<a href = "box.html">Box</a>
+					<a href = "rank.htm">Ranking</a>
+					<a href = "contact_us.html">Contact us</a>
+					<a href = "about_us.html">About</a>
+				</div>
+
+
+
+
+	</body>
+</html>

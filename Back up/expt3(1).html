@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Home Page</title>
+
+<meta name="google-signin-client_id" content="529219428652-1jhugb54h0jebnaij3t2rg4m1dlctqh9.apps.googleusercontent.com">
+
+<link rel="stylesheet" type="text/css" href="master.css">
+
+
+</head>
+
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = 0;
+	}
+
+</script>
+
+
+<script src="https://apis.google.com/js/api.js" async defer>
+	
+	gapi.load('auth2',function(){
+		gapi.auth2.init();
+	});
+
+
+	function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+   
+
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+<body>
+
+
+
+<div  id="HeaderText">
+	
+	<span id="r1"></span><div id="r2"></div>
+	
+	<span id="s1"></span><div id="s2"></div>
+
+	<span id="g1"></span><div id="g2"></div>
+
+	<span id="m1"></span><div id="m2"></div>
+
+	<span id="sy1"></span><div id="sy2"></div>
+
+</div>
+
+<span  class = "openbtn" onclick="openNav()" >&nbsp;&nbsp;&Xi; 	</span>
+				<div id = "mySidenav" class = "sidenav">
+					<!-- 	javascript:void(0) will call JS within the link -->
+
+					<a href = "javascript:void(0);" class = "closebtn" onclick = "closeNav()">x</a>
+					<a href = "index.html">Home</a>
+					<a href = "box.html">Box</a>
+					<a href = "rank.htm">Ranking</a>
+					<a href = "contact_us.html">Contact us</a>
+					<a href = "about_us.html">About</a>
+				</div>
+
+<div id="signin" onclick="onSignIn()" >
+	<img id="glogo" src="https://developers.google.com/identity/images/g-logo.png">
+	<p id="gtext"> Sign in with Google</p>
+</div>
+
+
+</body>
+
